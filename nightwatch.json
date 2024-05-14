@@ -1,0 +1,20 @@
+{ 
+  "src_folders" : ["nightwatch"],
+  "webdriver": {
+    "start_process" : true,
+    "server_path": "./bin/geckodriver-0.23",
+    "cli_args": [
+      "--log", "debug"
+    ],
+    "port": 4444
+  },
+  
+  "test_settings" : {
+    "default" : {
+      "desiredCapabilities": {
+        "browserName" : "firefox",
+        "acceptInsecureCerts": true
+      }
+    }
+  }
+}

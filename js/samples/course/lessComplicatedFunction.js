@@ -1,6 +1,6 @@
-const isArrayOfNumbers = data => data.some(isNaN)
+export const isArrayOfNumbers = data => data.some(isNaN)
 
-const findLargestNumberInArray = data => {
+export const findLargestNumberInArray = data => {
     let largestNumber = 0;
         
     for (let i = 0; i < data.length; i++) {
@@ -12,7 +12,7 @@ const findLargestNumberInArray = data => {
     return largestNumber
 }
 
-const findLargestWordInArray = data => {
+export const findLargestWordInArray = data => {
     let largestWord = ""
     for (let i = 0; i < data.length; i++) {
         if (largestWord.length < data[i].length) {
@@ -23,8 +23,8 @@ const findLargestWordInArray = data => {
     return largestWord
 }
 
-const findLargestInArray = data => {
-    if (isArrayOfNumbers(data)) {
+export const findLargestInArray = data => {
+    if (!isArrayOfNumbers(data)) {
         return findLargestNumberInArray(data)
     }
 

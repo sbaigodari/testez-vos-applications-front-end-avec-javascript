@@ -3,7 +3,7 @@
  * @param {*} data 
  * @returns 
  */
-const findLargestInArray = data => {
+export const findLargestInArray = data => {
     // On regarde si le tableau est composé uniquement de chiffres
     if (!data.some(isNaN)) {
         // Si oui, alors on récupère le nombre le plus grand
